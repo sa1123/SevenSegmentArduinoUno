@@ -1,13 +1,11 @@
 int ledPin = 9;      // LED connected to digital pin 9
 
-int threePin = 3;   // potentiometer connected to analog pin 3
+int threePin = 3;
 int fivePin = 5;
 int sixPin = 6;
 int ninePin = 9;
 int tenPin = 10;
 int elevenPin = 11;
-
-// int val = 3.3;         // variable to store the read value
 
 void setup() {
   pinMode(ledPin, OUTPUT);  // sets the pin as output
@@ -21,6 +19,8 @@ void setup() {
 }
 
 void loop() {
+
+  // analogWrite values from go 0 to 255
   
   for(int i=10; i>-1; i--){
     delay(1000);
@@ -114,5 +114,4 @@ void loop() {
       digitalWrite(A0, LOW);
     }
   }
-   // analogRead values go from 0 to 1023, analogWrite values from 0 to 255
 }
